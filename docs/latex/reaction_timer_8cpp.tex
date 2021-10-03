@@ -1,0 +1,128 @@
+\hypertarget{reaction_timer_8cpp}{}\doxysection{reaction\+Timer.\+cpp File Reference}
+\label{reaction_timer_8cpp}\index{reactionTimer.cpp@{reactionTimer.cpp}}
+{\ttfamily \#include $<$EEPROM.\+h$>$}\newline
+{\ttfamily \#include $<$Liquid\+Crystal.\+h$>$}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Liquid\+Crystal \mbox{\hyperlink{reaction_timer_8cpp_af97afdf00af0e116e9b5957f6a470fc2}{lcd}} (12, 11, 5, 4, 3, 2)
+\item 
+void \mbox{\hyperlink{reaction_timer_8cpp_a4fc01d736fe50cf5b977f755b675f11d}{setup}} ()
+\item 
+void \mbox{\hyperlink{reaction_timer_8cpp_afe461d27b9c48d5921c00d521181f12f}{loop}} ()
+\item 
+int \mbox{\hyperlink{reaction_timer_8cpp_aabb8ee691daf378a8c5d4ca45d2e08e2}{perform\+Test}} (int test\+Amount)
+\item 
+int \mbox{\hyperlink{reaction_timer_8cpp_ac8da963855e09bf929c085486f4a3b47}{test}} ()
+\item 
+void \mbox{\hyperlink{reaction_timer_8cpp_a77ea0dd8ac7417e9d454efd0717e991d}{cheat\+Screen}} ()
+\item 
+void \mbox{\hyperlink{reaction_timer_8cpp_ad70726016b7722deb394071ac6572e63}{ready\+Screen}} ()
+\item 
+void \mbox{\hyperlink{reaction_timer_8cpp_a2cfe232ef3cea040084701935bef7167}{average\+Time\+Screen}} (int time)
+\item 
+void \mbox{\hyperlink{reaction_timer_8cpp_a7423a08c676c32bdc66c23fb3705e3a3}{write\+To\+EEPROM}} (int address, int number)
+\item 
+int \mbox{\hyperlink{reaction_timer_8cpp_acda2cc9d816120ef51c9846204c44ca0}{read\+From\+EEPROM}} (int address)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{reaction_timer_8cpp_a353026e366a14cb80d08335e5e310aa0}{pin\+Button}} = 8
+\item 
+int \mbox{\hyperlink{reaction_timer_8cpp_a15c029033abe3c391a17a9c28f18ccff}{pin\+LED}} = 9
+\item 
+int \mbox{\hyperlink{reaction_timer_8cpp_a487be0e3bedff9eb8a67aa8848d51c52}{start\+Time}} = 0
+\item 
+int \mbox{\hyperlink{reaction_timer_8cpp_a00318ea64cb648f7d317aa0cff986955}{end\+Time}} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{reaction_timer_8cpp_a2cfe232ef3cea040084701935bef7167}\label{reaction_timer_8cpp_a2cfe232ef3cea040084701935bef7167}} 
+\index{reactionTimer.cpp@{reactionTimer.cpp}!averageTimeScreen@{averageTimeScreen}}
+\index{averageTimeScreen@{averageTimeScreen}!reactionTimer.cpp@{reactionTimer.cpp}}
+\doxysubsubsection{\texorpdfstring{averageTimeScreen()}{averageTimeScreen()}}
+{\footnotesize\ttfamily void average\+Time\+Screen (\begin{DoxyParamCaption}\item[{int}]{time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{reaction_timer_8cpp_a77ea0dd8ac7417e9d454efd0717e991d}\label{reaction_timer_8cpp_a77ea0dd8ac7417e9d454efd0717e991d}} 
+\index{reactionTimer.cpp@{reactionTimer.cpp}!cheatScreen@{cheatScreen}}
+\index{cheatScreen@{cheatScreen}!reactionTimer.cpp@{reactionTimer.cpp}}
+\doxysubsubsection{\texorpdfstring{cheatScreen()}{cheatScreen()}}
+{\footnotesize\ttfamily void cheat\+Screen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{reaction_timer_8cpp_af97afdf00af0e116e9b5957f6a470fc2}\label{reaction_timer_8cpp_af97afdf00af0e116e9b5957f6a470fc2}} 
+\index{reactionTimer.cpp@{reactionTimer.cpp}!lcd@{lcd}}
+\index{lcd@{lcd}!reactionTimer.cpp@{reactionTimer.cpp}}
+\doxysubsubsection{\texorpdfstring{lcd()}{lcd()}}
+{\footnotesize\ttfamily Liquid\+Crystal lcd (\begin{DoxyParamCaption}\item[{12}]{,  }\item[{11}]{,  }\item[{5}]{,  }\item[{4}]{,  }\item[{3}]{,  }\item[{2}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{reaction_timer_8cpp_afe461d27b9c48d5921c00d521181f12f}\label{reaction_timer_8cpp_afe461d27b9c48d5921c00d521181f12f}} 
+\index{reactionTimer.cpp@{reactionTimer.cpp}!loop@{loop}}
+\index{loop@{loop}!reactionTimer.cpp@{reactionTimer.cpp}}
+\doxysubsubsection{\texorpdfstring{loop()}{loop()}}
+{\footnotesize\ttfamily void loop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{reaction_timer_8cpp_aabb8ee691daf378a8c5d4ca45d2e08e2}\label{reaction_timer_8cpp_aabb8ee691daf378a8c5d4ca45d2e08e2}} 
+\index{reactionTimer.cpp@{reactionTimer.cpp}!performTest@{performTest}}
+\index{performTest@{performTest}!reactionTimer.cpp@{reactionTimer.cpp}}
+\doxysubsubsection{\texorpdfstring{performTest()}{performTest()}}
+{\footnotesize\ttfamily int perform\+Test (\begin{DoxyParamCaption}\item[{int}]{test\+Amount }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{reaction_timer_8cpp_acda2cc9d816120ef51c9846204c44ca0}\label{reaction_timer_8cpp_acda2cc9d816120ef51c9846204c44ca0}} 
+\index{reactionTimer.cpp@{reactionTimer.cpp}!readFromEEPROM@{readFromEEPROM}}
+\index{readFromEEPROM@{readFromEEPROM}!reactionTimer.cpp@{reactionTimer.cpp}}
+\doxysubsubsection{\texorpdfstring{readFromEEPROM()}{readFromEEPROM()}}
+{\footnotesize\ttfamily int read\+From\+EEPROM (\begin{DoxyParamCaption}\item[{int}]{address }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{reaction_timer_8cpp_ad70726016b7722deb394071ac6572e63}\label{reaction_timer_8cpp_ad70726016b7722deb394071ac6572e63}} 
+\index{reactionTimer.cpp@{reactionTimer.cpp}!readyScreen@{readyScreen}}
+\index{readyScreen@{readyScreen}!reactionTimer.cpp@{reactionTimer.cpp}}
+\doxysubsubsection{\texorpdfstring{readyScreen()}{readyScreen()}}
+{\footnotesize\ttfamily void ready\+Screen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{reaction_timer_8cpp_a4fc01d736fe50cf5b977f755b675f11d}\label{reaction_timer_8cpp_a4fc01d736fe50cf5b977f755b675f11d}} 
+\index{reactionTimer.cpp@{reactionTimer.cpp}!setup@{setup}}
+\index{setup@{setup}!reactionTimer.cpp@{reactionTimer.cpp}}
+\doxysubsubsection{\texorpdfstring{setup()}{setup()}}
+{\footnotesize\ttfamily void setup (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{reaction_timer_8cpp_ac8da963855e09bf929c085486f4a3b47}\label{reaction_timer_8cpp_ac8da963855e09bf929c085486f4a3b47}} 
+\index{reactionTimer.cpp@{reactionTimer.cpp}!test@{test}}
+\index{test@{test}!reactionTimer.cpp@{reactionTimer.cpp}}
+\doxysubsubsection{\texorpdfstring{test()}{test()}}
+{\footnotesize\ttfamily int test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{reaction_timer_8cpp_a7423a08c676c32bdc66c23fb3705e3a3}\label{reaction_timer_8cpp_a7423a08c676c32bdc66c23fb3705e3a3}} 
+\index{reactionTimer.cpp@{reactionTimer.cpp}!writeToEEPROM@{writeToEEPROM}}
+\index{writeToEEPROM@{writeToEEPROM}!reactionTimer.cpp@{reactionTimer.cpp}}
+\doxysubsubsection{\texorpdfstring{writeToEEPROM()}{writeToEEPROM()}}
+{\footnotesize\ttfamily void write\+To\+EEPROM (\begin{DoxyParamCaption}\item[{int}]{address,  }\item[{int}]{number }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{reaction_timer_8cpp_a00318ea64cb648f7d317aa0cff986955}\label{reaction_timer_8cpp_a00318ea64cb648f7d317aa0cff986955}} 
+\index{reactionTimer.cpp@{reactionTimer.cpp}!endTime@{endTime}}
+\index{endTime@{endTime}!reactionTimer.cpp@{reactionTimer.cpp}}
+\doxysubsubsection{\texorpdfstring{endTime}{endTime}}
+{\footnotesize\ttfamily int end\+Time = 0}
+
+\mbox{\Hypertarget{reaction_timer_8cpp_a353026e366a14cb80d08335e5e310aa0}\label{reaction_timer_8cpp_a353026e366a14cb80d08335e5e310aa0}} 
+\index{reactionTimer.cpp@{reactionTimer.cpp}!pinButton@{pinButton}}
+\index{pinButton@{pinButton}!reactionTimer.cpp@{reactionTimer.cpp}}
+\doxysubsubsection{\texorpdfstring{pinButton}{pinButton}}
+{\footnotesize\ttfamily int pin\+Button = 8}
+
+\mbox{\Hypertarget{reaction_timer_8cpp_a15c029033abe3c391a17a9c28f18ccff}\label{reaction_timer_8cpp_a15c029033abe3c391a17a9c28f18ccff}} 
+\index{reactionTimer.cpp@{reactionTimer.cpp}!pinLED@{pinLED}}
+\index{pinLED@{pinLED}!reactionTimer.cpp@{reactionTimer.cpp}}
+\doxysubsubsection{\texorpdfstring{pinLED}{pinLED}}
+{\footnotesize\ttfamily int pin\+LED = 9}
+
+\mbox{\Hypertarget{reaction_timer_8cpp_a487be0e3bedff9eb8a67aa8848d51c52}\label{reaction_timer_8cpp_a487be0e3bedff9eb8a67aa8848d51c52}} 
+\index{reactionTimer.cpp@{reactionTimer.cpp}!startTime@{startTime}}
+\index{startTime@{startTime}!reactionTimer.cpp@{reactionTimer.cpp}}
+\doxysubsubsection{\texorpdfstring{startTime}{startTime}}
+{\footnotesize\ttfamily int start\+Time = 0}
+
